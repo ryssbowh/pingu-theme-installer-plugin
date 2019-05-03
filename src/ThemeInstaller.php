@@ -15,7 +15,7 @@ class ThemeInstaller extends LibraryInstaller
         preg_match('/^pingu\/([a-z]+)-theme$/', $package->getPrettyName(), $matches);
         if (sizeof($matches) != 2) {
             throw new \InvalidArgumentException(
-                'Unable to install theme, pingu theme must have the following name : pingu/{name}-theme';
+                'Unable to install theme, pingu theme must have the following name : pingu/{name}-theme'
             );
         }
 
