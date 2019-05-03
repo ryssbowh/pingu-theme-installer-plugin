@@ -6,7 +6,7 @@
         "psr-0": {"ThemeInstaller": "src/"}
     },
     "extra": {
-        "class": "phpDocumentor\\Composer\\TemplateInstallerPlugin"
+        "class": "ThemeInstaller\\ThemeInstallerPlugin"
     },
     "require": {
         "composer-plugin-api": "^1.0"
