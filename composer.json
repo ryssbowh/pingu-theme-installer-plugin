@@ -1,0 +1,17 @@
+{
+    "name": "pingu/theme-installer-plugin",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-0": {"ThemeInstaller": "src/"}
+    },
+    "extra": {
+        "class": "phpDocumentor\\Composer\\TemplateInstallerPlugin"
+    },
+    "require": {
+        "composer-plugin-api": "^1.0"
+    },
+    "require-dev": {
+        "composer/composer": "^1.8"
+    }
+}
