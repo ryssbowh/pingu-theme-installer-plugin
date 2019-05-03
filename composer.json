@@ -3,7 +3,7 @@
     "type": "composer-plugin",
     "license": "MIT",
     "autoload": {
-        "psr-0": {"ThemeInstaller": "src/"}
+        "psr-4": {"ThemeInstaller": "src/"}
     },
     "extra": {
         "class": "ThemeInstaller\\ThemeInstallerPlugin"
