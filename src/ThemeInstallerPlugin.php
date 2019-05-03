@@ -3,6 +3,7 @@
 namespace ThemeInstaller;
 
 use Composer\Composer;
+use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
 
 class ThemeInstallerPlugin implements PluginInterface
