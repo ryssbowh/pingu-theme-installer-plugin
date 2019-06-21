@@ -12,14 +12,14 @@ class ThemeInstaller extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        preg_match('/^pingu\/([a-z]+)-theme$/', $package->getPrettyName(), $matches);
+        preg_match('/^pingu\/([a-z0-9_]+)-theme$/', $package->getPrettyName(), $matches);
         if (sizeof($matches) != 2) {
             throw new \InvalidArgumentException(
-                'Unable to install theme, pingu theme must have the following name : pingu/{name}-theme'
+                'Unable to install theme, pingu themes must have the following name : pingu/{name}-theme'
             );
         }
 
-        return 'public/themes/'.ucfirst($matches[1]);
+        return 'Themes/'.ucfirst($matches[1]);
     }
 
     /**
